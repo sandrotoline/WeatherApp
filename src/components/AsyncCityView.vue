@@ -92,7 +92,7 @@
                 </div>
             </div>
          </div>
-         <div class="flex items-center gap-2 py-6 text-white cursor-pointer duration-150 hover:text-red-800" @click="removeCity">
+         <div v-if="!route.query.preview" class="flex items-center gap-2 py-6 text-white cursor-pointer duration-150 hover:text-red-800" @click="removeCity">
             <i class="fa-solid fa-trash"></i> <p>Remove City</p>
          </div>
     </div>
