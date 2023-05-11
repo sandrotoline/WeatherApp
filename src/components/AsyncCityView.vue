@@ -52,7 +52,7 @@
             <h2 class="text-white">Today's Weather</h2>
             <div class="flex overflow-x-hidden justify-between flex-wrap flex-row">
                 <div
-                    v-for="hourData in weatherData.hourly.slice(0,6)" :key="hourData.dt"
+                    v-for="hourData in weatherData.hourly.slice(1,7)" :key="hourData.dt"
                     class="flex flex-col gap-4 items-center bg-sky-950/50 rounded-sm p-6 px-7 my-4"
                 >
                     <p class="whitespace-nowrap text-md text-white"> {{new Date(hourData.currentTime).toLocaleTimeString("en-us", {hour: "numeric",})}}</p>
